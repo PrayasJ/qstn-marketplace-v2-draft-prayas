@@ -1,0 +1,13 @@
+name = "nftstorage-client"
+main = "src/index.ts"
+compatibility_date = "2023-01-25"
+keep_vars = true
+node_compat = true
+
+routes = [
+	{ pattern = "nftstorage.open4glabs.xyz", custom_domain = true }
+]
+
+[env.production.vars]
+NFT_STORAGE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweGFFQzAyOWZCMjNhNUZBOTVkZDA5YTZBNTY0MmVFMjQ5MTEzNTVFZDEiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY4MDU1MjgwNjQ1MSwibmFtZSI6IlFTVE4tQWxwaGEifQ.FS2BQWKbe6BoNCZ7Eub1Ydk80kP57_PIXi_cq6Ie_p8"
+

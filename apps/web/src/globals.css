@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.mobile {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}

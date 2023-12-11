@@ -1,0 +1,16 @@
+fragment FillingQueueFields on FillingQueue {
+  fillingId
+  user {
+    ...UserFields
+  }
+  survey {
+    ...SurveyFields
+  }
+  fillingType
+  fillingStatus
+  claimId
+  metadata
+  createdAt
+  updatedAt
+  completedAt
+}

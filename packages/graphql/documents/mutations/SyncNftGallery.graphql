@@ -1,0 +1,3 @@
+mutation SyncNftGallery($request: SyncNftGalleryRequest!) {
+  syncNftGallery(request: $request)
+}

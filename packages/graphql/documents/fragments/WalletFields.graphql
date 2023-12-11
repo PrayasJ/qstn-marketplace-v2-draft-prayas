@@ -1,0 +1,30 @@
+fragment WalletFields on Wallet {
+  walletId
+  credit
+  user {
+    ...UserFields
+  }
+  recipient
+  nearAddress
+  avaxAddress
+  auroraAddress
+  polygonAddress
+  moonbeamAddress
+  ethereumAddress
+  tonAddress
+  cronosAddress
+  bobaAddress
+  bscAddress
+  opbnbAddress
+  filecoinAddress
+  baseAddress
+  hederaAddress
+  stellarAddress
+  solanaAddress
+  polkadotAddress
+  icpAddress
+  bitfinityAddress
+  stripeAccountId
+  createdAt
+  updatedAt
+}

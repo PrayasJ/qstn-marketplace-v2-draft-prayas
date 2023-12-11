@@ -1,0 +1,6 @@
+mutation CreateProduct($request: CreateProductRequest!){
+  createProduct(request: $request){
+    ...ProductFields
+    __typename
+  }
+}

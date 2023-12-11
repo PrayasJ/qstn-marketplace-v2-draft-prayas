@@ -1,0 +1,12 @@
+query SearchMarketplace($request: SearchQueryRequest!) {
+  search(request: $request) {
+    ... on MarketplaceSearchResult {
+      items {
+        ...ProductFields
+      }
+      pageInfo {
+        next
+      }
+    }
+  }
+}

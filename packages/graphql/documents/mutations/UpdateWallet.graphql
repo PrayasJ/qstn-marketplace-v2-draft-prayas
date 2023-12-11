@@ -1,0 +1,6 @@
+mutation UpdateWallet($request: UpdateWalletRequest!) {
+  updateWallet(request: $request) {
+    ...WalletFields
+    __typename
+  }
+}

@@ -1,0 +1,6 @@
+mutation CreateSurvey($request: SurveyCreateRequest!) {
+  createSurvey(request: $request) {
+    ...SurveyFields
+    __typename
+  }
+}

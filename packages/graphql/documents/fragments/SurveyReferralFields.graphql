@@ -1,0 +1,17 @@
+fragment SurveyReferralFields on SurveyReferral {
+  referralId
+  surveyId
+  profileId
+  invitedEmail
+  invitedStatus
+  invitedId
+  referralStatus
+  accountStatus
+  displayName
+  email
+  avatar
+  createdAt
+  updatedAt
+  invitedAt
+  completedAt
+}

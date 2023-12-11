@@ -1,0 +1,6 @@
+{
+  "extends": "@qstn/config/base.tsconfig.json",
+  "compilerOptions": {
+    "types": ["@cloudflare/workers-types"]
+  }
+}

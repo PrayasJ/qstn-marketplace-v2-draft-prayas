@@ -1,0 +1,6 @@
+mutation CreateWallet($request: CreateWalletRequest!) {
+  createWallet(request: $request) {
+    ...WalletFields
+    __typename
+  }
+}

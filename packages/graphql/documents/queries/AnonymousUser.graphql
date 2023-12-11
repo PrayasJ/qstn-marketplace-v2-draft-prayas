@@ -1,0 +1,5 @@
+query AnonymousUser($request: AnonymousUserQueryRequest!) {
+  anonymousUser(request: $request) {
+    ...AnonymousUserFields
+  }
+}

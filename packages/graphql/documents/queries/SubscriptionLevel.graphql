@@ -1,0 +1,6 @@
+query SubscriptionLevel($request: SubscriptionLevelRequest!) {
+  subscriptionLevel(request: $request) {
+    id
+    subscriptionLevel  
+  }
+}

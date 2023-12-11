@@ -1,0 +1,33 @@
+{
+  "name": "@qstn/graphql",
+  "version": "0.0.0",
+  "private": true,
+  "license": "AGPL-3.0",
+  "main": "generated.ts",
+  "scripts": {
+    "codegen": "graphql-codegen",
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "lint:fix": "eslint . --fix --ext .js,.ts,.tsx",
+    "prettier": "prettier --check \"**/*.{js,ts,tsx,md}\"  --cache",
+    "prettier:fix": "prettier --write \"**/*.{js,ts,tsx,md}\"  --cache",
+    "test:dev": "vitest --run",
+    "typecheck": "tsc --pretty"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.17",
+    "@qstn/data": "*",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^4.0.1",
+    "@graphql-codegen/fragment-matcher": "^5.0.0",
+    "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-operations": "^4.0.1",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.7",
+    "@graphql-codegen/typescript-resolvers": "^4.0.1",
+    "@qstn/config": "*",
+    "@types/node": "^20.4.1",
+    "typescript": "^5.1.6",
+    "vitest": "^0.33.0"
+  }
+}

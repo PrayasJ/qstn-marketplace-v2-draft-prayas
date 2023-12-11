@@ -1,0 +1,13 @@
+query SearchBusiness($request: SearchQueryRequest!) {
+  search(request: $request) {
+    ... on BusinessSearchResult {
+      items {
+        ...UserFields
+      }
+      pageInfo {
+        totalCount
+        next
+      }
+    }
+  }
+}

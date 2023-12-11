@@ -1,0 +1,12 @@
+query SearchNfts($request: SearchQueryRequest!) {
+  search(request: $request) {
+    ... on NftSearchResult {
+      items {
+        ...NftFields
+      }
+      pageInfo {
+        next
+      }
+    }
+  }
+}

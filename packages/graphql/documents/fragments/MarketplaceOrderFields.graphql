@@ -1,0 +1,18 @@
+fragment MarketplaceOrderFields on MarketplaceOrder {
+  orderId
+  user {
+    ...UserFields
+  }
+  productId
+  orderStatus
+  orderType
+  paymentType
+  orderAmount
+  metadata
+  mediaClaimed
+  mediaClaimedAt
+  mediaClaimedFrom
+  chainId
+  createdAt
+  updatedAt
+}

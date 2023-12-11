@@ -1,0 +1,7 @@
+query FillingQueue($request: FillingQueueQueryRequest!) {
+  fillingQueue(request: $request) {
+    items {
+    ...FillingQueueFields
+    }
+  }
+}

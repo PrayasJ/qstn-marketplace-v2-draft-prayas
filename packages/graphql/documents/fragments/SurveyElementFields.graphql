@@ -1,0 +1,59 @@
+fragment SurveyElementFields on SurveyElement {
+  ... on TextElement {
+    name
+    title
+    type
+    points
+    isRequired
+    correctAnswer
+  }
+  
+  ... on CommentElement {
+    name
+    title
+    type
+    points
+    isRequired
+    correctAnswer
+  }
+
+  ... on RankingElement {
+    name
+    title
+    type
+    points
+    choices {
+      ...SurveyElementItemValueTypeFields
+    }
+    isRequired
+    correctAnswer
+  }
+  ... on RadiogroupElement {
+    name
+    title
+    type
+    points
+    choices {
+      ...SurveyElementItemValueTypeFields
+    }
+    isRequired
+    correctAnswer
+  }
+  ... on RatingElement {
+    name
+    title
+    type
+    rateMax
+    points
+    isRequired
+    correctAnswer
+  }
+  ... on BooleanElement {
+    name
+    title
+    type
+    points
+    isRequired
+    correctAnswer
+  }
+}

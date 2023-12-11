@@ -1,0 +1,3 @@
+mutation DeleteFillingQueue($request: DeleteFillingQueueRequest!) {
+  deleteFillingQueue(request: $request)
+}

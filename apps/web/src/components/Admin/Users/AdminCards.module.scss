@@ -1,0 +1,32 @@
+.adminCard {
+  padding: 26px;
+  background: #1f1f22;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s ease-in;
+  &:hover {
+    background-color: #27272a;
+  }
+}
+
+.adminCardImg {
+  position: relative;
+  .adminCardImg_banned {
+    position: absolute;
+    bottom: -7px;
+    right: -2px;
+    border: 2px solid #1f1f22;
+    color: #ef5656;
+    background: #372424;
+  }
+}
+
+@media (max-width: 760px) {
+  .adminCardIcons {
+    display: none !important;
+  }
+}

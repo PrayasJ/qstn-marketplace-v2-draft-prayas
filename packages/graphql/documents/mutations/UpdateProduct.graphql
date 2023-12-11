@@ -1,0 +1,6 @@
+mutation UpdateProduct($request: UpdateProductRequest!){
+  updateProduct(request: $request){
+    ...ProductFields
+    __typename
+  }
+}

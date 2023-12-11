@@ -1,0 +1,11 @@
+query Users($request: ProfileQueryRequest!) {
+  users(request: $request) {
+    items {
+    ...UserFields
+    }
+    pageInfo {
+      totalCount
+      next
+    }    
+  }
+}

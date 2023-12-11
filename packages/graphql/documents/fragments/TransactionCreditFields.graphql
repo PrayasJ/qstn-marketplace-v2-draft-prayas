@@ -1,0 +1,19 @@
+fragment TransactionCreditFields on TransactionCredit {
+  transactionId
+  orderId
+  user {
+    ...UserFields
+  }
+  survey {
+    ...SurveyFields
+  }
+  surveyResult {
+    ...SurveyResultFields
+  }
+  amount
+  transactionHash
+  transactionType
+  transactionStatus
+  transactionSource
+  createdAt
+}

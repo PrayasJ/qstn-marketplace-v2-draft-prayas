@@ -1,0 +1,3 @@
+mutation SyncMediaProducts($request: SyncMediaProductsRequest!) {
+  syncMediaProducts(request: $request)
+}

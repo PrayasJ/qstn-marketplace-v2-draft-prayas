@@ -1,0 +1,6 @@
+mutation UpdateMarketplaceOrder($request: UpdateMarketplaceOrderRequest!){
+  updateMarketplaceOrder(request: $request){
+    ...MarketplaceOrderFields
+    __typename    
+  }
+}

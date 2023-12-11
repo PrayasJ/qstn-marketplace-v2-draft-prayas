@@ -1,0 +1,60 @@
+fragment NftFields on NFT {
+  ... on Erc721 {
+    nftId
+    contractName
+    contractAddress
+    symbol
+    tokenId
+    owners {
+      amount
+      address
+      profileId
+    }
+    name
+    description
+    contentUri
+    originalContent {
+      uri
+      metaType
+      animatedUrl
+    }
+    chainId
+    collectionName
+    ercType
+  }
+  ... on Nep171 {
+    nftId
+    seriesId
+    metadata {
+      title
+      description
+      media
+      mediaHash
+      copies
+      issuedAt
+      expiresAt
+      startsAt
+      updatedAt
+      extra
+      reference
+      referenceHash
+    }
+    price
+    royalty
+    creatorId
+    sellerId
+    ownerId
+    productId
+    productType
+    productStatus
+    orderId
+    orderStatus
+    surveyId
+    resultsId
+    evmContractAddress
+    chainId
+    mediaClaimed
+    mediaClaimedAt
+    mediaClaimedFrom
+  }
+}

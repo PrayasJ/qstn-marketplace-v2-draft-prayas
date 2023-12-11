@@ -1,0 +1,6 @@
+mutation UpdateEmbedSurveyResult($request: UpdateEmbedSurveyResultRequest!) {
+  updateEmbedSurveyResult(request: $request) {
+    ...EmbedSurveyResultFields
+    __typename
+  }
+}

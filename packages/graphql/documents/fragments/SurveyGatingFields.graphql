@@ -1,0 +1,8 @@
+fragment SurveyGatingFields on SurveyGating{
+  gateId
+  surveyId
+  profileId
+  requirements
+  createdAt
+  updatedAt
+}

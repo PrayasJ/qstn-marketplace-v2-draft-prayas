@@ -1,0 +1,44 @@
+import { themeColors } from '@colors/themeColors';
+import adminStyles from '@components/Common/admin.module.scss';
+import { useThemeMode } from '@hooks/useThemeMode';
+import { PlusCircledIcon } from '@radix-ui/react-icons';
+import { Flex, IconButton } from '@sekmet/radix-ui-themes';
+import React, { useState } from 'react';
+
+export const AdminTabPanel = () => {
+  const { mode } = useThemeMode();
+  const navItems = ['All Businesses', 'Boosted', 'Banned'];
+  const [activeNav, setActiveNav] = useState('All Businesses');
+  return (
+    <div>
+      <div className={adminStyles.adminTabHeader}>
+        <h2>Marketplace</h2>
+        <Flex gap={'3'} align={'center'}>
+          <ul
+            className={adminStyles.adminTabNav}
+            style={{ background: themeColors[mode].input }}
+          >
+            {navItems.map((item) => (
+              <li
+                className={
+                  item === activeNav ? adminStyles.adminTabNavActive : ''
+                }
+                style={{
+                  background:
+                    item === activeNav ? themeColors[mode].headerNavActive : ''
+                }}
+                key={item}
+                onClick={() => setActiveNav(item)}
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+          <IconButton radius="full" style={{ cursor: 'pointer' }}>
+            <PlusCircledIcon />
+          </IconButton>
+        </Flex>
+      </div>
+    </div>
+  );
+};

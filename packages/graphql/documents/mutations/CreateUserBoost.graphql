@@ -1,0 +1,6 @@
+mutation CreateUserBoost($request: CreateUserBoostRequest!) {
+  createUserBoost(request: $request) {
+    ...UserBoostFields
+    __typename
+  }
+}

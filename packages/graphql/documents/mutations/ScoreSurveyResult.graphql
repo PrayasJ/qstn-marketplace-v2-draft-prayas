@@ -1,0 +1,6 @@
+mutation ScoreSurveyResult($request: ScoreSurveyResultRequest!) {
+  scoreSurveyResult(request: $request) {
+    ...SurveyResultFields
+    __typename
+  }
+}

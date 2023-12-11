@@ -1,0 +1,6 @@
+mutation UpdateSurveyResult($request: UpdateSurveyResultRequest!) {
+  updateSurveyResult(request: $request) {
+    ...SurveyResultFields
+    __typename
+  }
+}

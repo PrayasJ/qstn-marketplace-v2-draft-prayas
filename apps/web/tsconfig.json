@@ -1,0 +1,16 @@
+{
+  "extends": "@qstn/config/react.tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components*": ["src/components*"],
+      "@lib*": ["src/lib*"],
+      "@hooks*": ["src/hooks*"],
+      "@colors*": ["src/colors*"],
+      "@gql*": ["src/graphql*"],
+      "@generated*": ["src/generated*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["src/stories/**"]
+}

@@ -1,0 +1,5 @@
+query SurveyRewardErc721($request: SurveyRewardQueryRequest!){
+  surveyRewardErc721(request: $request) {
+    ...SurveyRewardFields
+  }
+}

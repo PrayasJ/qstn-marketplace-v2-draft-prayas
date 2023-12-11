@@ -1,0 +1,6 @@
+mutation BanUnbanUser($request: BanUnbanUserRequest!) {
+  banUnbanUser(request: $request) {
+    ...UserFields
+    __typename
+  }
+}

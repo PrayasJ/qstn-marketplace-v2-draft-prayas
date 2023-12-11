@@ -1,0 +1,3 @@
+mutation DeleteWallet($request: DeleteWalletRequest!) {
+  deleteWallet(request: $request)
+}

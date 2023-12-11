@@ -1,0 +1,7 @@
+query UserRefferals($request: UserRefferalQueryRequest!) {
+  userRefferals(request: $request) {
+    items {
+      ...UserRefferalFields
+    }
+  }
+}

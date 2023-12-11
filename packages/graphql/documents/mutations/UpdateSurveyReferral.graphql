@@ -1,0 +1,6 @@
+mutation UpdateSurveyReferral($request: UpdateSurveyReferralRequest!) {
+  updateSurveyReferral(request: $request) {
+    ...SurveyReferralFields
+    __typename
+  }
+}

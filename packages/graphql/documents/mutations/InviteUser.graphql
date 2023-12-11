@@ -1,0 +1,6 @@
+mutation InviteUser($request: InviteUserRequest!) {
+  inviteUser(request: $request) {
+    ...UserFields
+    __typename
+  }
+}

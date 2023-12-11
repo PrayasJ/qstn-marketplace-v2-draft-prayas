@@ -1,0 +1,27 @@
+{
+  "name": "@workers/nftstorage-client",
+  "version": "0.0.0",
+  "private": true,
+  "license": "GPL-3.0",
+  "scripts": {
+    "dev": "wrangler dev --port 8097",
+    "worker:deploy": "wrangler publish",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --fix --ext .ts",
+    "prettier": "prettier --check \"**/*.{js,ts,tsx,md}\"  --cache",
+    "prettier:fix": "prettier --write \"**/*.{js,ts,tsx,md}\"  --cache",
+    "typecheck": "tsc --pretty"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "ipfs-http-client": "^60.0.1",
+    "nft.storage": "^7.1.0",
+    "uint8arrays": "^4.0.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230710.0",
+    "@qstn/config": "*",
+    "typescript": "^5.1.6",
+    "wrangler": "3.2.0"
+  }
+}

@@ -1,0 +1,12 @@
+query SearchTutorials($request: SearchQueryRequest!) {
+  search(request: $request) {
+    ... on TutorialSearchResult {
+      items {
+        ...SurveyFields
+      }
+      pageInfo {
+        next
+      }
+    }
+  }
+}

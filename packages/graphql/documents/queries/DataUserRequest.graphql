@@ -1,0 +1,5 @@
+query DataUserRequest($request: CategoriesRequest) {
+  dataUser(request: $request) {
+    ...DataUserFields
+  }
+}

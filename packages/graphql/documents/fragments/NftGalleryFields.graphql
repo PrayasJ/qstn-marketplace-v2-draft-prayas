@@ -1,0 +1,11 @@
+fragment NftGalleryFields on NftGallery {
+  nftGalleryId
+  name
+  profileId
+  items {
+    ...NftFields
+  }
+  chainId
+  createdAt
+  updatedAt
+}

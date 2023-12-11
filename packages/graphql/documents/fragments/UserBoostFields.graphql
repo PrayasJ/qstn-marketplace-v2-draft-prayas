@@ -1,0 +1,9 @@
+fragment UserBoostFields on UserBoost{
+  boostId
+  profileId
+  startAt
+  endAt
+  boostStatus
+  createdAt
+  updatedAt
+}

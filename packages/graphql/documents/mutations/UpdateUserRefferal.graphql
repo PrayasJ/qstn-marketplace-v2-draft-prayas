@@ -1,0 +1,6 @@
+mutation UpdateUserRefferal($request: UpdateUserRefferalRequest!) {
+  updateUserRefferal(request: $request) {
+    ...UserRefferalFields
+    __typename
+  }
+}

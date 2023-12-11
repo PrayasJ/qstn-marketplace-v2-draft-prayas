@@ -1,0 +1,6 @@
+mutation UpdateSurveyGating($request: UpdateSurveyGatingRequest!){
+  updateSurveyGating(request: $request) {
+    ...SurveyGatingFields
+    __typename 
+  }
+}

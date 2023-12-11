@@ -1,0 +1,6 @@
+mutation CreateUserMembership($request: CreateUserMembershipRequest!) {
+  createUserMembership(request: $request) {
+    ...UserMembershipFields
+    __typename
+  }
+}

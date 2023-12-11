@@ -1,0 +1,7 @@
+fragment AnonymousUserFields on AnonymousUser{
+  anonId
+  profileId
+  fingerprint
+  createdAt
+  updatedAt
+}

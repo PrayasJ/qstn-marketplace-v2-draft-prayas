@@ -1,0 +1,5 @@
+query SurveyAnalytics($request: SurveyAnalyticsRequest!) {
+  surveyAnalytics(request: $request) {
+    ...ChartDataLabelsFields
+  }
+}

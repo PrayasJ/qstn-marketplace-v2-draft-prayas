@@ -1,0 +1,7 @@
+query LeaderboardEntries($request: LeaderboardEntriesRequest!) {
+  leaderboardEntries(request: $request) {
+    items {
+    ...LeaderboardEntryFields
+    }
+  }
+}

@@ -1,0 +1,13 @@
+fragment ChartDataLabelsFields on ChartDataLabels {
+  labels
+  data
+  totalSurveys
+  totalCompletions
+  totalBusiness
+  rankingCompletions {
+      surveyId
+      completions
+  }
+  avgCompletionTime
+  totalPageviews
+}

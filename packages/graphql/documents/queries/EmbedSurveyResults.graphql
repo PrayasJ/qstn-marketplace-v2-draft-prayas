@@ -1,0 +1,7 @@
+query EmbedSurveyResults($request: EmbedSurveyResultQueryRequest!) {
+  embedSurveyResults(request: $request) {
+    items {
+      ...EmbedSurveyResultFields
+    }
+  }
+}

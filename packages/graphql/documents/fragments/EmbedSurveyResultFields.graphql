@@ -1,0 +1,23 @@
+fragment EmbedSurveyResultFields on EmbedSurveyResult {
+  embedResultsId
+  result
+  fingerprint
+  survey {
+    surveyId
+    title
+    description
+    logo
+    surveyType
+    surveyStatus
+    funded
+  }
+  claimId
+  rewardId
+  rewardType
+  rewardClaimed
+  rewardClaimedAt
+  mediaClaimed
+  mediaClaimedAt
+  chainId
+  createdAt
+}

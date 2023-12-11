@@ -1,0 +1,3 @@
+mutation CreateErc721NftGallery($request: NftGalleryCreateRequest!) {
+  createErc721NftGallery(request: $request)
+}

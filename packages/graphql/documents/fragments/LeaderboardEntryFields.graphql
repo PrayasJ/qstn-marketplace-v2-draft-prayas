@@ -1,0 +1,11 @@
+fragment LeaderboardEntryFields on LeaderboardEntry{
+  leaderboardEntryId
+  leaderboardId
+  profileId
+  issuer
+  iden3issuer
+  avatar
+  points
+  rank
+  createdAt
+}

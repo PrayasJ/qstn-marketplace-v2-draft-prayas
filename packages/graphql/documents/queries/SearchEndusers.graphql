@@ -1,0 +1,13 @@
+query SearchEndusers($request: SearchQueryRequest!) {
+  search(request: $request) {
+    ... on EnduserSearchResult {
+      items {
+        ...UserFields
+      }
+      pageInfo {
+        totalCount
+        next
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+  align-items: center;
+  &Text {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 8px;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+}

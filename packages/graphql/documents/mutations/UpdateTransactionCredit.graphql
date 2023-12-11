@@ -1,0 +1,6 @@
+mutation UpdateTransactionCredit($request: UpdateTransactionCreditRequest!) {
+  updateTransactionCredit(request: $request) {
+    ...TransactionCreditFields
+    __typename
+  }
+}

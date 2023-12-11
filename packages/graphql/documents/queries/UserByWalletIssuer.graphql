@@ -1,0 +1,5 @@
+query UserByWalletIssuer($request: Iden3IssuerProfileQueryRequest!) {
+  userbyWalletIssuer(request: $request) {
+    ...UserFields
+  }
+}

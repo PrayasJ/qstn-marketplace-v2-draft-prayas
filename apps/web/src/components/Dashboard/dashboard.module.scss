@@ -1,0 +1,52 @@
+.selected-color {
+    background: #D4D4D8;
+  }
+  
+  .bg-light-mode {
+    background: #EDEDED;
+  }
+  
+  
+  .light-button-main {
+    background-color: #A855F7;
+    @apply flex items-center justify-center gap-2 m-auto py-2 px-3 rounded-xl text-white;
+  }
+  
+  .upgrade-button {
+    background: #3DD69E;
+    @apply flex items-center justify-center gap-2 m-auto py-2 px-3 rounded-xl text-white;
+  }
+  
+  .input-light {
+    @apply w-full inline-flex h-12 appearance-none 
+    items-center justify-center rounded-2xl px-[10px] text-[15px] leading-none 
+    text-white shadow-[0_0_0_1px] outline-none
+  }
+  .input-light::selection {
+    @apply text-white
+  }
+  .input-light:focus {
+    @apply shadow-[0_0_0_2px_black] 
+  }
+  .input-light:hover {
+    @apply shadow-[0_0_0_1px_black] 
+  }
+  
+  .hint-text {
+    color: #A1A1AA;
+  }
+  
+  .page-minus-footer {
+    height: calc(100% - 15rem);
+  }
+  .max-height {
+    max-height: calc(100% - 6rem);
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    @apply rounded-r-xl;
+  }
+  
+  .svg-bullet {
+    list-style-type: none;
+    list-style-image: url('data:image/svg+xml;utf8,<svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3" r="3" fill="#3DD69E"/></svg>');
+  }

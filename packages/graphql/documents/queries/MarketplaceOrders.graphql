@@ -1,0 +1,7 @@
+query MarketplaceOrders($request: MarketplaceOrdersQueryRequest!) {
+  marketplaceOrders(request: $request) {
+    items { 
+      ...MarketplaceOrderFields
+    }
+  }
+}

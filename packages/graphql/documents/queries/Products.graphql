@@ -1,0 +1,11 @@
+query Products($request: ProductsQueryRequest!) {
+    products(request: $request) {
+    items { 
+      ...ProductFields
+    }
+    pageInfo {
+        totalCount
+        next
+      }
+    }
+  }

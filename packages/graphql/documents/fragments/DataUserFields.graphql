@@ -1,0 +1,120 @@
+fragment DataUserFields on DataUser {
+  userMostCompletedSurveys {
+    profileId
+    numberOfSurveys
+  }
+  mostEarnedCashRewards {
+    profileId
+    mostCashViaStripe
+  }
+  mostEarnedCryptocurrencyRewards {
+    nearRewards {
+      profileId
+      amountCrypto
+      amountUsd
+    }
+    polkadotRewards {
+      profileId
+      amountCrypto
+      amountUsd
+    }
+    polygonRewards {
+      profileId
+      amountCrypto
+      amountUsd
+    }
+    totalCryptoInCash {
+      profileId
+      amountUsd
+    }
+  }
+  mostDollarsSpentNFTMarketplace {
+    profileId
+    realDollarsSpent
+  }
+  mostCryptocurrencySpentNFTMarketplace {
+    mostSpentNear {
+      profileId
+      amountCrypto
+      amountUsd
+    }
+    mostSpentPolkadot {
+      profileId
+      amountCrypto
+      amountUsd
+    }
+    mostSpentPolygon {
+      profileId
+      amountCrypto
+      amountUsd
+    }
+  }
+  mostInvitedUsers {
+    profileId
+    usersInvited
+  }
+  mostCompletedSurveysInSpecificCategory {
+    profileId
+    categoryName
+    surveysCompleted
+  }
+  highestAverageSurveyCompletionRate {
+    highestAverageSurveyCompletion {
+      profileId
+      percentageCompletionAverage
+    }
+  }
+  mostConsistentSurveyCompletionFrequency {
+    daily {
+      profileId
+      frequencyAverage
+    }
+    weekly {
+      profileId
+      frequencyAverage
+    }
+    monthly {
+      profileId
+      frequencyAverage
+    }
+    yearly {
+      profileId
+      frequencyAverage
+    }
+  }
+  highestNumberOfConsecutiveDaysWithSurveyCompletions {
+    profileId
+    longestDailyStreak
+  }
+  mostActiveParticipationInSpecificTypesOfSurveys {
+    multipleChoiceSurveysRankings {
+      profileId
+      multipleChoiceSurveys
+    }
+    openEndedSurveysRankings {
+      profileId
+      openEndedSurveys
+    }
+  }
+  mostReferralsConvertedIntoActiveSurveyParticipants {
+    profileId
+    referralsSent
+    referredParticipantCount
+  }
+  mostEngagementWithCommunityFeatures {
+    profileId
+    totalPosts
+  }
+  mostCreativeAndUniqueSurveyResponses {
+    surveyResponseRating {
+      profileId
+      item_id
+      rating
+    }
+    mediaRating {
+      profileId
+      item_id
+      rating
+    }
+  }
+}

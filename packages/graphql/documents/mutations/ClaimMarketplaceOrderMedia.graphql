@@ -1,0 +1,6 @@
+mutation ClaimMarketplaceOrderMedia($request: ClaimMarketplaceOrderMediaRequest!){
+  claimMarketplaceOrderMedia(request: $request){
+    ...MarketplaceOrderFields
+    __typename
+  }
+}

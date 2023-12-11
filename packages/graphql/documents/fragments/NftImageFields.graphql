@@ -1,0 +1,9 @@
+fragment NftImageFields on NftImage {
+  nftImageId
+  contractAddress
+  tokenId
+  uri
+  chainId
+  verified
+  createdAt
+}

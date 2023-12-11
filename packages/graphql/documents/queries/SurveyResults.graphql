@@ -1,0 +1,7 @@
+query SurveyResults($request: SurveyResultQueryRequest!) {
+  surveyResults(request: $request) {
+    items {
+      ...SurveyResultFields
+    }
+  }
+}

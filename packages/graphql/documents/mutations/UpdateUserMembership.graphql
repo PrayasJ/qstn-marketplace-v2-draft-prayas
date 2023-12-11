@@ -1,0 +1,6 @@
+mutation UpdateUserMembership($request: UpdateUserMembershipRequest!) {
+  updateUserMembership(request: $request) {
+    ...UserMembershipFields
+    __typename
+  }
+}

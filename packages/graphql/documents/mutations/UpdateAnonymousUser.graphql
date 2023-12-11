@@ -1,0 +1,6 @@
+mutation UpdateAnonymousUser($request: UpdateAnonymousUserRequest!) {
+  updateAnonymousUser(request: $request) {
+    ...AnonymousUserFields
+    __typename
+  }
+}

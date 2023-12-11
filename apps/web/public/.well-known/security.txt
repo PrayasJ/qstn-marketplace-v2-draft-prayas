@@ -1,0 +1,6 @@
+Contact: https://github.com/QSTN-US/qstn-near-marketplace/security/advisories/new
+Expires: 2022-12-31T18:29:00.000Z
+Acknowledgments: https://github.com/QSTN-US/qstn-near-marketplace/security/advisories?state=published
+Preferred-Languages: en
+Canonical: https://qstnus.com/.well-known/security.txt
+Policy: https://github.com/QSTN-US/qstn-near-marketplace/security/policy

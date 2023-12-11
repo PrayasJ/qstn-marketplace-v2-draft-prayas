@@ -1,0 +1,5 @@
+query UserContract($request: UserContractQueryRequest!) {
+  userContract(request: $request) {
+    ...UserContractFields
+  }
+}

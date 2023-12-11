@@ -1,0 +1,6 @@
+mutation CreateProfile($request: CreateProfileRequest!) {
+  createProfile(request: $request) {
+    ...UserFields
+    __typename
+  }
+}

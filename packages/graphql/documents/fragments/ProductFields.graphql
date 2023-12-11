@@ -1,0 +1,18 @@
+fragment ProductFields on MarketplaceProduct {
+  productId
+  name
+  description
+  image
+  productType
+  price
+  productStatus
+  duration
+  mediaId
+  metadata
+  whiteList
+  sellerId
+  ownerId
+  chainId
+  createdAt
+  updatedAt
+}

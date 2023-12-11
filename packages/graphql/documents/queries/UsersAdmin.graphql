@@ -1,0 +1,11 @@
+query UsersAdmin($request: ProfileQueryRequest!) {
+  usersAdmin(request: $request) {
+    items {
+    ...UserFields
+    }
+    pageInfo {
+      totalCount
+      next
+    }    
+  }
+}

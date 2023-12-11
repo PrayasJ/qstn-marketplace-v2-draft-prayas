@@ -1,0 +1,8 @@
+query UserTransactions($request: UserTransactionQueryRequest!) {
+  userTransactions(request: $request) {
+    items { 
+      ...TransactionCreditFields
+    }
+    
+  }
+}

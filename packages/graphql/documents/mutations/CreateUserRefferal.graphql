@@ -1,0 +1,6 @@
+mutation CreateUserRefferal($request: CreateUserRefferalRequest!) {
+  createUserRefferal(request: $request) {
+    ...UserRefferalFields
+    __typename
+  }
+}

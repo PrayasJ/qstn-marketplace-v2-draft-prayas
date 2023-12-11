@@ -1,0 +1,6 @@
+mutation CreateSurveyGating($request: CreateSurveyGatingRequest!){
+  createSurveyGating(request: $request) {
+    ...SurveyGatingFields
+    __typename 
+  }
+}

@@ -1,0 +1,5 @@
+query CheckTransaction($request: TransactionHashRequest!) {
+  checkTransaction(request: $request) {
+    ...TransactionCreditFields
+  }
+}

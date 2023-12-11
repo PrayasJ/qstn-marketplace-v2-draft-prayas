@@ -1,0 +1,6 @@
+mutation VerifyUser($request: VerifyUserRequest!) {
+  verifyUser(request: $request) {
+    ...UserFields
+    __typename
+  }
+}

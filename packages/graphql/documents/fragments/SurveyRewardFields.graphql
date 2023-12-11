@@ -1,0 +1,14 @@
+fragment SurveyRewardFields on SurveyReward {
+  rewardId
+  rewardType
+  mediaId
+  mediaPrize {
+    ...NftFields
+  }
+  surveyId
+  profileId
+  resultsId
+  chainId
+  createdAt
+  updatedAt
+}

@@ -1,0 +1,6 @@
+mutation CreateAnonymousUser($request: CreateAnonymousUserRequest!) {
+  createAnonymousUser(request: $request) {
+    ...AnonymousUserFields
+    __typename
+  }
+}

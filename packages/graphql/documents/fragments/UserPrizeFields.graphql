@@ -1,0 +1,9 @@
+fragment UserPrizeFields on UserPrize {
+  prizeId
+  rewardId
+  surveyId
+  resultId
+  profileId
+  chainId
+  createdAt
+}

@@ -1,0 +1,6 @@
+mutation CreateMarketplaceOrder($request: CreateMarketplaceOrderRequest!){
+  createMarketplaceOrder(request: $request){
+    ...MarketplaceOrderFields
+    __typename
+  }
+}

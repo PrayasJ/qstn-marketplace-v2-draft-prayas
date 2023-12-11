@@ -1,0 +1,3 @@
+mutation DeleteProduct($request: DeleteProductRequest!){
+  deleteProduct(request: $request)
+}

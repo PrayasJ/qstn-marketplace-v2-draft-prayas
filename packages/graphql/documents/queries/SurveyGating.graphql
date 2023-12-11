@@ -1,0 +1,5 @@
+query SurveyGating($request: SurveyGatingQueryRequest!) {
+  surveyGating(request: $request) {
+    ...SurveyGatingFields
+  }
+}

@@ -1,0 +1,6 @@
+mutation ClaimSurveyMedia($request: ClaimSurveyMediaRequest!){
+  claimSurveyMedia(request: $request){
+    ...SurveyRewardFields
+    __typename
+  }
+}

@@ -1,0 +1,5 @@
+query UserByIssuer($request: IssuerProfileQueryRequest!) {
+  userbyIssuer(request: $request) {
+    ...UserFields
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "extends": "@qstn/config/base.tsconfig.json"
+}

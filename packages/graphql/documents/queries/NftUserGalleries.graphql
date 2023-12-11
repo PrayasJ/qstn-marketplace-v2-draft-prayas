@@ -1,0 +1,11 @@
+query NftUserGalleries($request: NftGalleriesQueryRequest!) {
+  nftUserGalleries(request: $request) {
+    items { 
+      ...NftGalleryFields
+    }
+    pageInfo {
+        totalCount
+        next
+      }
+  }
+}

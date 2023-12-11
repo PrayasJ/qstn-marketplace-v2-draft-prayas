@@ -1,0 +1,24 @@
+.primary-btn,
+.sv-footer__complete-btn {
+  font-family: "poppins-medium" !important;
+  color: white;
+  border: 1px solid #3772FF !important;
+  background: #3772FF!important;
+  padding: 8px 15px !important;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px !important;
+}
+
+.secondary-btn {
+  font-family: "poppins-medium" !important;
+  padding: 8px 15px !important;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px !important;
+  background: #ffff !important;
+  border: 1px solid #3772FF !important;
+  color: #3772FF !important;
+}
+
+.primary-btn:hover,
+.sv-footer__complete-btn:hover {
+  opacity: 0.9 !important;
+  background: #3772FF !important;
+}

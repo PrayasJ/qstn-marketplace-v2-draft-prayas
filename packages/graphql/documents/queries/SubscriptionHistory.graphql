@@ -1,0 +1,8 @@
+query SubscriptionHistory($request: SubscriptionHistoryRequest!) {
+  subscriptionHistory(request: $request) {
+    id
+    subscriptionLevel
+    startDate
+    endDate
+  }
+}

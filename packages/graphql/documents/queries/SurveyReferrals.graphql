@@ -1,0 +1,7 @@
+query SurveyReferrals($request: SurveyReferralQueryRequest!) {
+  surveyReferrals(request: $request) {
+    items {
+      ...SurveyReferralFields
+    }
+  }
+}

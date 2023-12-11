@@ -1,0 +1,3 @@
+mutation SyncPageviewSources($request: SyncPageviewSourcesRequest!) {
+  syncPageviewSources(request: $request)
+}

@@ -1,0 +1,3 @@
+mutation DeleteTransactionCredit($request: DeleteTransactionCreditRequest!) {
+  deleteTransactionCredit(request: $request)
+}

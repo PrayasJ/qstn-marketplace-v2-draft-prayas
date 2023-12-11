@@ -1,0 +1,5 @@
+query Survey($request: SingleSurveyQueryRequest!) {
+  survey(request: $request) {
+    ...SurveyFields
+  }
+}

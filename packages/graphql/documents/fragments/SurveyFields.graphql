@@ -1,0 +1,45 @@
+fragment SurveyFields on Survey {
+  surveyId
+  title
+  description
+  logo
+  surveyType
+  surveyStatus
+  campaignType
+  pages {
+    ...SurveyPageFields
+  }
+  results {
+    ...SurveyResultFields
+  }
+  user {
+    ...UserFields
+  }
+  fillingStatus
+  rewardId
+  rewardType
+  cidHash
+  tags
+  claimId
+  rewardClaimed
+  rewardClaimedAt
+  mediaClaimed
+  mediaClaimedAt
+  mediaClaimedFrom
+  resultsId
+  whiteList
+  funded
+  showQuestionNumbers
+  pageNextText
+  completeText
+  showPrevButton
+  firstPageIsStarted
+  startSurveyText
+  completedHtml
+  showPreviewBeforeComplete
+  privateKey
+  publicKey
+  createdAt
+  updatedAt
+  publishedAt
+}

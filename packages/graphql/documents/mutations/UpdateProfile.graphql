@@ -1,0 +1,6 @@
+mutation UpdateProfile($request: UpdateProfileRequest!) {
+  updateProfile(request: $request) {
+    ...UserFields
+    __typename
+  }
+}

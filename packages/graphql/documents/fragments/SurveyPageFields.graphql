@@ -1,0 +1,7 @@
+fragment SurveyPageFields on SurveyPage {
+  name
+  title
+  elements {
+    ...SurveyElementFields
+  }
+}

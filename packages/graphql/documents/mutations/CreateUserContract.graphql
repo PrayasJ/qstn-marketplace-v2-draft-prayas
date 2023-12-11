@@ -1,0 +1,6 @@
+mutation CreateUserContract($request: CreateUserContractRequest!) {
+  createUserContract(request: $request) {
+    ...UserContractFields
+    __typename
+  }
+}

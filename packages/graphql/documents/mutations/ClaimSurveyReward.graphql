@@ -1,0 +1,6 @@
+mutation ClaimSurveyReward($request: ClaimSurveyRewardRequest!){
+  claimSurveyReward(request: $request){
+    ...SurveyRewardFields
+    __typename
+  }
+}

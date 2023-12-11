@@ -1,0 +1,9 @@
+fragment SurveyElementItemValueTypeFields on SurveyElementItemValueType {
+  ... on TextValueType {
+    text
+    value
+  }
+  ... on ValueType {
+    value
+  }
+}

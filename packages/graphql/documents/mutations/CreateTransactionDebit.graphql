@@ -1,0 +1,6 @@
+mutation CreateTransactionDebit($request: TransactionDebitRequest!) {
+  createTransactionDebit(request: $request) {
+    ...TransactionCreditFields
+    __typename
+  }
+}

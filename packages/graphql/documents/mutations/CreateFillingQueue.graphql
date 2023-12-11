@@ -1,0 +1,6 @@
+mutation CreateFillingQueue($request: CreateFillingQueueRequest!) {
+  createFillingQueue(request: $request) {
+    ...FillingQueueFields
+    __typename
+  }
+}

@@ -1,0 +1,29 @@
+query UserWallet($request: UserWalletQueryRequest!) {
+  userWallet(request: $request) {
+    walletId
+    credit
+    recipient
+    nearAddress
+    auroraAddress
+    avaxAddress
+    polygonAddress
+    moonbeamAddress
+    ethereumAddress
+    tonAddress
+    cronosAddress
+    bobaAddress
+    bscAddress
+    opbnbAddress
+    filecoinAddress
+    baseAddress
+    hederaAddress
+    stellarAddress
+    solanaAddress
+    polkadotAddress
+    icpAddress
+    bitfinityAddress
+    stripeAccountId
+    createdAt
+    updatedAt
+  }
+}

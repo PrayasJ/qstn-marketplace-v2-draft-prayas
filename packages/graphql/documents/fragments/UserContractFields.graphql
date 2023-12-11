@@ -1,0 +1,14 @@
+fragment UserContractFields on UserContract{
+  contractId
+  profileId
+  surveyId
+  network
+  contractType
+  contractName
+  contractAddress
+  ownerAddress
+  funcCall
+  input
+  output
+  createdAt
+}

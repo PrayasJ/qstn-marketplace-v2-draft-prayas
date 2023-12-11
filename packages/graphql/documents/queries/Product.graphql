@@ -1,0 +1,5 @@
+query Product($request: ProductQueryRequest!) {
+  product(request: $request) {
+    ...ProductFields
+  }
+}

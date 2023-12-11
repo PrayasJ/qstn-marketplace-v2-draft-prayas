@@ -1,0 +1,5 @@
+query TopBusiness($request: TopBusinessRequest!) {
+  topBusiness(request: $request) {
+    ...ChartDataLabelsFields
+  }
+}

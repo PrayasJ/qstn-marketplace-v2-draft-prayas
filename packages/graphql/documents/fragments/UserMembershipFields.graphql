@@ -1,0 +1,9 @@
+fragment UserMembershipFields on UserMembership{
+  membershipId
+  profileId
+  startAt
+  endAt
+  membershipStatus
+  createdAt
+  updatedAt
+}

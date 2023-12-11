@@ -1,0 +1,12 @@
+query SearchSurveys($request: SearchQueryRequest!) {
+  search(request: $request) {
+    ... on SurveySearchResult {
+      items {
+        ...SurveyFields
+      }
+      pageInfo {
+        next
+      }
+    }
+  }
+}

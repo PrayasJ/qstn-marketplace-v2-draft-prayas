@@ -1,0 +1,6 @@
+mutation RegistryUserPrize($request: RegistryUserPrizeRequest!) {
+  registryUserPrize(request: $request) {
+    ...UserPrizeFields
+    __typename
+  }
+}

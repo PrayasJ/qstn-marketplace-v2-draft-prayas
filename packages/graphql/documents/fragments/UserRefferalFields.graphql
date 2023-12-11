@@ -1,0 +1,17 @@
+fragment UserRefferalFields on UserRefferal {
+  refferalId
+  surveyId
+  profileId
+  invitedEmail
+  invitedStatus
+  invitedId
+  refferalStatus
+  accountStatus
+  displayName
+  email
+  avatar
+  createdAt
+  updatedAt
+  invitedAt
+  completedAt
+}

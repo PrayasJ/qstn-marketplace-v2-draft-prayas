@@ -1,0 +1,7 @@
+query NftGalleries($request: NftGalleriesQueryRequest!) {
+  nftGalleries(request: $request) {
+    items { 
+      ...NftGalleryFields
+    }
+  }
+}
